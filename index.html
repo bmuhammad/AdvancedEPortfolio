@@ -94,34 +94,86 @@
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-            <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-        <h4 class="modal__sub-title modal__title--about">Software Engineer.</h4>
-        <p class="modal__para">I'm <b class="orange">Software Engineer</b> with a strong passion for developing
-            database websites with great <b class="orange">user experience</b>. 
-            <br> I currently work on 
-            difficult engineering problems and learn from a team consisting of some of 
-            the most <b class="orange">talented</b> and <b class="orange">expereinced </b> software engineers every day.
-        </p>
-        <div class="modal__languages">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h3 class="modal__sub-title modal__title--about">
+            Software Engineer.
+          </h3>
+          <p class="modal__para">
+            I'm <b class="orange">Software Engineer</b> with a strong passion
+            for developing database websites with great
+            <b class="orange">user experience</b>. <br />
+            I currently work on difficult engineering problems and learn from a
+            team consisting of some of the most
+            <b class="orange">talented</b> and
+            <b class="orange">expereinced </b> software engineers every day.
+          </p>
+          <div class="modal__languages">
             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/240px-HTML5_Badge.svg.png" alt="">
-                <span class="language__name">HTML</span>
+              <img
+                class="modal__language--img"
+                src="./assets/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
             </figure>
             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/css-image.png" alt="">
-          <span class="language__name">CSS</span>
+              <img
+                class="modal__language--img"
+                src="./assets/css-image.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
             </figure>
             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/js-image.png" alt="">
-                <span class="language__name">JavaScript</span>
+              <img
+                class="modal__language--img"
+                src="./assets/js-image.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
             </figure>
             <figure class="modal__language">
-                <img class="modal__language--img" src="./assets/react-image.png" alt="">
-                <span class="language__name">React</span>
+              <img
+                class="modal__language--img"
+                src="./assets/react-image.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
             </figure>
+          </div>
         </div>
-    </div>
-        <div class="modal__half modal__contact">Lets have a chat</div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__tital--contact">Let's have a chat!</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities
+          </h3>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+                Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fa-solid fa-x modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
@@ -163,37 +215,36 @@
               </div>
             </li>
             <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./assets/blinker mockup.png"
-                    class="project__img"
-                    alt=""
-                  />
-                  <div class="project__wrapper--bg"></div>
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Car Sales Projects
-                    </h3>
-                    <h4 class="project__description--sub-title">
-                      HTML, CSS, JavaScript,Vue, Vuex
-                    </h4>
-                    <p class="project__description--para">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Debitis temporibus perspiciatis nesciunt rerum ipsum
-                      voluptas quo quos dolore sit maiores.
-                    </p>
-                    <div class="project__description--links">
-                      <a href="#" class="project__description--link">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                      <a href="#" class="project__description--link">
-                        <i class="fa-solid fa-link"></i>
-                      </a>
-                    </div>
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript,Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Debitis temporibus perspiciatis nesciunt rerum ipsum
+                    voluptas quo quos dolore sit maiores.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
                   </div>
                 </div>
-              </li>
-            
+              </div>
+            </li>
           </ul>
         </div>
       </div>
