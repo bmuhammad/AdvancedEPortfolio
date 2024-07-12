@@ -2,7 +2,7 @@ let isModalOpen = false;
 let contrastToggle = false;
 
 function toggleContrast() {
-    constrastToggle = !contrastToggle
+    contrastToggle = !contrastToggle
     if(contrastToggle) {
         document.body.classList += " dark-theme" 
     }
