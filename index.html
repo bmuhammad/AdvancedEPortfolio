@@ -10,12 +10,22 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "itNKnCpDkXBLizDdV",
+      });
+   })();
+</script>
   </head>
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/logo.svg" alt="" />
+          <!-- <img id="personal-logo" src="./assets/logo.png" alt="" /> -->
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link" onclick="toggleModal()">
@@ -78,7 +88,7 @@
               <i class="fa-brands fa-github"></i>
             </a>
             <a
-              href="./assets/Bmuhammad  Resume.pdf"
+              href="./assets/Brian-Muhamma-Resume.pdf"
               target="_blank"
               class="social__link click"
             >
@@ -145,6 +155,38 @@
               />
               <span class="language__name">React</span>
             </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/ts-image.png"
+                alt=""
+              />
+              <span class="language__name">Typescript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/jquery-image.png"
+                alt=""
+              />
+              <span class="language__name">JQuery</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/Csharp-image.png"
+                alt=""
+              />
+              <span class="language__name">C#</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/sql-img.png"
+                alt=""
+              />
+              <span class="language__name">SQL</span>
+            </figure>
           </div>
         </div>
         <div class="modal__half modal__contact">
@@ -199,28 +241,28 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/ultraverse.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
                   <h3 class="project__description--title">
-                    Car Sales Projects
+                    Digital items Sales
                   </h3>
                   <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript,Vue, Vuex
+                    HTML, CSS, JavaScript, React
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Debitis temporibus perspiciatis nesciunt rerum ipsum
-                    voluptas quo quos dolore sit maiores.
+                    This project demonstrates the skillsets of using animations, transitions, carousels,
+                     processing API requests for dynamic data, skeleton loading states 
+                    and using Git version control.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/bmuhammad/brian-internship" target="_blank" class="project__description--link">
                       <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://brian-internship.vercel.app/" target="_blank" class="project__description--link">
                       <i class="fa-solid fa-link"></i>
                     </a>
                   </div>
@@ -230,30 +272,61 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/twitter clone.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
                   <h3 class="project__description--title">
-                    Car Sales Projects
+                   Twitter Clone
                   </h3>
                   <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript,Vue, Vuex
+                    Next.js, Tailwind CSS, and Firebase
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Debitis temporibus perspiciatis nesciunt rerum ipsum
-                    voluptas quo quos dolore sit maiores.
+                    This project is a clone of Twitter. It demonstrates the features of using Server side rendering for SEO
+                    Optimization, modern CSS frameworks, and backend cloud computing services such as authentication
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <!-- <a href="#" class="project__description--link">
                       <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="#" class="project__description--link">
                       <i class="fa-solid fa-link"></i>
+                    </a> -->
+                    <div>Work in progress. Release date 9/30/2024</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Summary.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Ecommerce subscription sales of Book summaries
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    NextJS, Typescript, Firebase, Stripe, Redux
+                  </h4>
+                  <p class="project__description--para">
+                    This project demonstrates the skillsets of authentication, ecommerce, API request 
+                    for dynamic data, and predictable and maintainable global state management
+                  </p>
+                  <div class="project__description--links">
+                    <!-- <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
                     </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a> -->
+                    <div>Work in progress. Release date 10/07/2024</div>
                   </div>
                 </div>
               </div>
@@ -266,7 +339,7 @@
       <div class="container">
         <div class="row footer__row">
           <figure>
-            <img class="footer__logo--img" src="./assets/logo.svg" alt="" />
+            <!-- <img class="footer__logo--img" src="./assets/logo.svg" alt="" /> -->
           </figure>
           <div class="footer__social--list">
             <a
@@ -288,7 +361,7 @@
              Contact
             </a>
             <a
-              href="./assets/Bmuhammad  Resume.pdf" target="_blank"
+              href="./assets/Brian-Muhamma-Resume.pdf" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
